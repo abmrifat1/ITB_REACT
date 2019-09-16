@@ -62,7 +62,7 @@ function temperature(fahrenheit){
   celsius=(fahrenheit-32)*5/9;
   console.log(celsius);
 }
-temperature(68);
+temperature(91);
 ////////////////////////
 
 function squareValue(value){
