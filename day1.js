@@ -36,7 +36,7 @@ joinString("hi","Khorshed","alam");
 
 function shoppingList(){
     var list=[['pc',56000],['mobile',15000],['bag',1500]];
-    console.log(list);
+    console.log(list[]);
 }
 shoppingList();
 /////////////////
