@@ -130,7 +130,8 @@ console.log(login("abm","123","basic"))
 
 var profile={
     name:"Khorshed Alam",
-    education:[{
+    education:[
+        {
         instuteType:"ssc",
         instuteName:"bhs",
         instuteAddress:"chadpur",
@@ -156,4 +157,4 @@ var profile={
     }
 }
 
-console.log(profile.educationInstute.ssc);
+console.log(profile.education);
