@@ -78,5 +78,14 @@ console.log(checkNumber(20,30));
 
 //////////////////////////////////
 
+function getString(){
+    var string="how are you";
+    var str1="Py"
+    return str1.concat(string);
+}
+console.log(getString())
+
+/////////////////////////////
+
 
 
