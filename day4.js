@@ -10,6 +10,7 @@ function leapYear(year){
 
 leapYear(2000);
 leapYear(2019);
+//////////////////////////////////
 
 
 function curruntDateTime(){
@@ -20,7 +21,7 @@ function curruntDateTime(){
     console.log("Date is:"+day +" and time is :"+ time )
    
 }
-(curruntDateTime())
+curruntDateTime()
 
 ////////////////////////
 
@@ -87,5 +88,17 @@ console.log(getString())
 
 /////////////////////////////
 
+function findLargestNumber(x,y,z){
+    if(x>y && x>z){
+        console.log(x +" is the largest number");
+    }
+    else if(y>z && y>x){
+        console.log(y +" is the largest number");
+    }
+    else{
+        console.log(z +" is the largest number")
+    }
+}
 
+findLargestNumber(7,6,9)
 
