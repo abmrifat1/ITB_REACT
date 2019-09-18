@@ -76,7 +76,7 @@ function checkNumber(x,y){
     
 }
 console.log(checkNumber(20,30));
-
+                                                              
 //////////////////////////////////
 
 function getString(){
@@ -100,5 +100,70 @@ function findLargestNumber(x,y,z){
     }
 }
 
-findLargestNumber(7,6,9)
+findLargestNumber(7,6,9);
+//////////////////////////
+
+var name="rifat";
+console.log(`my name is:${name}`)
+
+///////////////////
+
+const ename={
+    id:'5998',
+    todo:function(work){
+      this.id=work;
+      
+    }
+  };
+  ename.todo("abm");
+  console.log(ename.id)
+/////////////////////
+
+var SpaceShuttle = function(targetPlanet){
+    this.targetPlanet = targetPlanet;
+  }
+  var zeus = new SpaceShuttle('Jupiter');
+
+
+
+/////////////////////////////////
+
+class Book {
+    constructor(author) {
+      this._author = author;
+    }
+    
+    get writer(){
+      return this._author;
+    }
+   
+    set writer(updatedAuthor){
+      this._author = updatedAuthor;
+    }
+  }
+
+  const lol = new Book('anonymous');
+  console.log(lol._author)  //anonymous
+  console.log(lol.writer);  // anonymous
+  lol.writer = 'wut';
+  console.log(lol.writer);  // wut
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
