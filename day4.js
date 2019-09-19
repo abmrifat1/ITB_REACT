@@ -100,7 +100,7 @@ function findLargestNumber(x,y,z){
     }
 }
 
-findLargestNumber(7,6,9);
+findLargestNumber(6,6,9);
 //////////////////////////
 
 var name="rifat";
