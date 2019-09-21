@@ -1,5 +1,5 @@
 function leapYear(year){
-    if(year%4==0){
+    if(year%4===0){
         console.log(year+" Year is a leapyear")
     }
     else{
@@ -45,15 +45,15 @@ function getNumber(value){
 
 }
 console.log(getNumber(6))
-
+console.log(getNumber(5))
 //////////////////////////////////////
 
 
 function getCommand(x,y,commnd){
- if (commnd=="mul"){
+ if (commnd==="mul"){
      return x*y
  }
- if (commnd=="div"){
+ if (commnd==="div"){
      return x/y
  }
  else{
@@ -63,6 +63,7 @@ function getCommand(x,y,commnd){
 }
 
 console.log(getCommand(2,3,'div'))
+console.log(getCommand(2,3,'mul'))
 
 //////////////////////////////////
 function checkNumber(x,y){
@@ -76,7 +77,9 @@ function checkNumber(x,y){
     
 }
 console.log(checkNumber(20,30));
-                                                              
+console.log(checkNumber(50,30));
+console.log(checkNumber(10,30));                                     
+
 //////////////////////////////////
 
 function getString(){
