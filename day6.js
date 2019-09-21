@@ -73,4 +73,68 @@
     doSomething=(a,b,functionOne)=>{
         return functionOne(a,b);   
     }
-    console.log(doSomething(3,4,add));
+   // console.log(doSomething(3,4,add));
+
+
+    // var string="3646352565"
+    // var number=string.split('') 
+    // console.log(number)
+
+    // const str="hello samim";
+
+    stringChange=(sentence,position,newValue)=>{
+        sen=sentence.split("");
+        sen[position]=newValue;
+        sentence=sen.join("")
+        return sentence;
+    }
+    // stringReplace=(sentence,oldValue,newValue)=>{
+    //     sen=sentence.split("");
+    //     for(var i=0;i<=sen.length-1;i++){
+    //         if(sen[i]==oldValue){
+    //             sen[i]=newValue;
+    //             break;
+    //         }
+    //     }
+    //     sentence=sen.join("");
+    //     return sentence;
+    // }
+
+   // console.log(stringChange(str,10,"r"))
+ //   console.log(stringReplace(str,"m","H"))
+
+    
+    const str="mihello sami";
+    let count=0;
+    stringReplace=(sentence,oldValue,newValue)=>{
+        sentence=sentence.split("");
+        value=oldValue.split("");
+    
+        for(var i=0;i<=value.length-1;i++){
+            for(var j=0;j<=sentence.length-1;j++){
+                if(value[i]==sentence[j]){
+                    i++;                     
+                    count++
+                    console.log(j)
+                    var blankIndex=j
+                    if(count==(value.length)){
+                         
+                         console.log(j)
+                         sentence[blankIndex]="";
+
+                    }
+                   
+            }
+            
+            }
+            
+
+        }
+        sentence[blankIndex]=newValue;
+        newSentence=sentence.join('')
+    
+        console.log(newSentence)
+        
+    } 
+
+  stringReplace(str,"mi","0");
