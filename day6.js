@@ -48,3 +48,29 @@
         let address="kolabagan";
         const birthday="1/1/1996";
     }
+
+
+    const grocerie=[
+        {item:"veg",price:"20"},{item:"banana",price:"30"}
+    ]
+
+    getItem=(list)=>{
+        var string="";
+        for(var i=list.length-1;i>=0;i--){
+            var string= string+( list[i].item +":"+ list[i].price)+", ";
+        }
+    
+        console.log("today shopping :"+ string)
+        
+    
+    }
+    getItem(grocerie)
+
+
+    add=(num1,num2)=>{
+      return num=num1+num2;
+    }
+    doSomething=(a,b,functionOne)=>{
+        return functionOne(a,b);   
+    }
+    console.log(doSomething(3,4,add));
