@@ -80,31 +80,31 @@
     // var number=string.split('') 
     // console.log(number)
 
-    // const str="hello samim";
+//     const str="hello samim";
 
-    stringChange=(sentence,position,newValue)=>{
-        sen=sentence.split("");
-        sen[position]=newValue;
-        sentence=sen.join("")
-        return sentence;
-    }
-    // stringReplace=(sentence,oldValue,newValue)=>{
-    //     sen=sentence.split("");
-    //     for(var i=0;i<=sen.length-1;i++){
-    //         if(sen[i]==oldValue){
-    //             sen[i]=newValue;
-    //             break;
-    //         }
-    //     }
-    //     sentence=sen.join("");
-    //     return sentence;
-    // }
+//     stringChange=(sentence,position,newValue)=>{
+//         sen=sentence.split("");
+//         sen[position]=newValue;
+//         sentence=sen.join("")
+//         return sentence;
+//     }
+//     stringReplace=(sentence,oldValue,newValue)=>{
+//         sen=sentence.split("");
+//         for(var i=0;i<=sen.length-1;i++){
+//             if(sen[i]==oldValue){
+//                 sen[i]=newValue;
+//                 break;
+//             }
+//         }
+//         sentence=sen.join("");
+//         return sentence;
+//     }
 
-   // console.log(stringChange(str,10,"r"))
- //   console.log(stringReplace(str,"m","H"))
+//    console.log(stringChange(str,10,"r"))
+//    console.log(stringReplace(str,"m","H"))
 
     
-    const str="mihello sami";
+    const str="fahello rifat";
     let count=0;
     stringReplace=(sentence,oldValue,newValue)=>{
         sentence=sentence.split("");
@@ -115,12 +115,18 @@
                 if(value[i]==sentence[j]){
                     i++;                     
                     count++
-                    console.log(j)
+                   // console.log(j)
                     var blankIndex=j
                     if(count==(value.length)){
-                         
+                         console.log(count)
                          console.log(j)
-                         sentence[blankIndex]="";
+                         var currentCount=0;
+                        for(var p=j;count>currentCount;p--){
+                            console.log(p)
+                            blankIndex=p;
+                            sentence[blankIndex]="";
+                            count--;
+                        }
 
                     }
                    
@@ -137,4 +143,4 @@
         
     } 
 
-  stringReplace(str,"mi","0");
+  stringReplace(str,"t","*");
