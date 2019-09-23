@@ -1,8 +1,16 @@
-var timesTwo = params => {
-     params += 2;
-     var obj={
-         
-     }
-}
 
-console.log (timesTwo(4)); 
+
+
+  var obj = {
+    id: 42,
+    counter: function counter() {
+      setTimeout(() => {
+        console.log(this.id);
+      }, 1000);
+    }
+  };
+
+  console.log(obj.counter())
+
+
+//console.log (obj.address); 
