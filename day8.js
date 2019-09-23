@@ -1,6 +1,61 @@
 
+var library = 
+  {
+      author: 'Bill Gates',
+      title: 'The Road Ahead',
+      readingStatus: true
+  }
+
+getProperties=(obj)=>{
+    return Object.keys(obj);
+}
+//console.log(getProperties(library))
+
+removeProperties=(obj,key)=>{
+  console.log(obj);
+  delete obj[key];
+  console.log(obj);
+  
+}
+removeProperties(library,"readingStatus")
+
+var book = [ 
+  {
+      author: 'Bill Gates',
+      title: 'The Road Ahead',
+      readingStatus: true
+  },
+  {
+      author: 'Steve Jobs',
+      title: 'Walter Isaacson',
+      readingStatus: true
+  },
+  {
+      author: 'Suzanne Collins',
+      title:  'Mockingjay: The Final Book of The Hunger Games', 
+      readingStatus: false
+  }];
+  checkReadindStatus=(ary,value)=>{
+    
+    let status=false;
+    for(var i=0;i<(ary.length);i++){
+      if(ary[i].title===value){
+        status=true;
+        console.log(ary[i].readingStatus)
+      }
+    }
+
+    if(status==false){
+      console.log("book not found")
+
+    }
+     
+  }
+ 
+  checkReadindStatus(book,'The Road Ahead')
 
 
+//assignment
   var obj = {
     id: "end day",
     counter: function counter() {
