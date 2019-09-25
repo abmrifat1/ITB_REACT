@@ -31,4 +31,23 @@ const LOCAL_FORECAST = {
 
   const one=getName();
   const vegetables= new one("banana");
-  console.log(vegetables.name)
+ // console.log(vegetables.name)
+
+
+  class Book{
+      constructor (aurthor){
+          this.aurthor=aurthor;
+      }
+        get  writer(){
+          return this.aurthor;
+      }
+
+        set newWriter(updateAuthoe){
+          this.aurthor=updateAuthoe;
+      }
+  }
+  const book=new Book('kazi nojrul');
+  console.log(book.writer);
+  book.newWriter='robi thakur';
+  console.log(book.writer)
+  
