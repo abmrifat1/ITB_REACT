@@ -65,4 +65,23 @@
 
     };
 
-console.log(getData(data,'some data'))
+//console.log(getData(bird))
+
+
+class Flowers{
+    constructor(name,color,size){
+        this.name=name;
+        this.color=color,
+        this.size=size
+    }
+}
+
+const flowers=new Flowers('rose','red','small');
+
+getFlowersDetails=(object)=>{
+    for(value in object){
+        console.log(value+':'+object[value])
+    }
+}
+
+getFlowersDetails(flowers)
