@@ -143,4 +143,4 @@
         
     } 
 
-  stringReplace(str,"t","*");
+  stringReplace(str,"fat","*");

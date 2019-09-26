@@ -1,71 +1,30 @@
+
+
     let bird={
-
         info:{
-
             name:{
-
                 value:"tweet"
-
+          }
+        },
+        color:{
+            rgb:{
+                red:20,
+                green:6,
+                blue:1
             }
-
         }
-
     }
-
-    // const dig = (obj, target) =>
-
-    // target in obj
-
-    //     ? obj[target]
-
-    //     : Object.values(obj).reduce((acc, val) => {
-
-    //         if (acc !== undefined) return acc;
-
-    //         if (typeof val === 'object') return dig(val, target);
-
-    //     }, undefined);
-
-
-
-
     const getData=(obj,key)=>{
-
         if(key in obj){
-
-            return obj[key]
-
+           return obj[key]
         }else{
-
-            return Object.values(obj).reduce((acc,val)=>{
-
-                if(acc!==undefined) return acc;
-
+           return Object.values(obj).reduce((acc,val)=>{
+              if(acc!==undefined) return acc;
                 if(typeof val==="object") return getData(val,key);
-
             },undefined)
-
         }
-
     }
-
-
-
-    const data = {
-
-    level1: {
-
-        level2: {
-
-        level3: 'some data'
-
-        }
-
-    }
-
-    };
-
-//console.log(getData(bird))
+    console.log(getData(bird,"rgb"))
 
 
 class Flowers{
@@ -84,4 +43,17 @@ getFlowersDetails=(object)=>{
     }
 }
 
-getFlowersDetails(flowers)
+//getFlowersDetails(flowers)
+
+readTypeOfValue=(arra)=>{
+    for(let e in arra){
+      if(typeof e==='boolean'){
+          console.log (true);
+      }
+      else{
+          console.log(false)
+      }
+    }
+}
+
+readTypeOfValue([1,2,"true",false])
