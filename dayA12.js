@@ -30,21 +30,20 @@ let data=[2,3,4,3,5]
 let data1=[1,2,6,4,3,5,2]
 
 var mainData = data.concat(data1);
-
-
+console.log (mainData)
 
 //console.log(a)
 let newAry=[];
 for(var i=0;i<mainData.length;i++){
    for(var j=i+1;j<mainData.length;j++){
        if(mainData[i]==mainData[j]){
-         mainData[j] =undefined;
+         mainData[j] ='';
        }
        
    }
   
       
-      if(mainData[i]!==undefined){
+      if(mainData[i]!==''){
          newAry.push(mainData[i]);
       }
  
@@ -103,6 +102,7 @@ console.log(eng)
   
 // }
 // console.log(eng)
+//
 
 number=[1,2,3,4,5]
 
