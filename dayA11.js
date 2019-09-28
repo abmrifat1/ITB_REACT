@@ -24,7 +24,7 @@
             },undefined)
         }
     }
-    console.log(getData(bird,"rgb"))
+    console.log(getData(bird,"blue"))
 
 
 class Flowers{
