@@ -30,7 +30,7 @@ let data=[2,3,4,3,5]
 let data1=[1,2,6,4,3,5,2]
 
 var mainData = data.concat(data1);
-console.log (mainData)
+//console.log (mainData)
 
 //console.log(a)
 let newAry=[];
