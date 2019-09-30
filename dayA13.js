@@ -37,3 +37,34 @@ function mutation(arr) {
  }
 
 //console.log(mutation(["hello", "hey"])); //if all letter is found in first arry,then true
+
+var previous=[7,9]
+var newData=["hi","ki"]
+var arr=['ssc']
+
+const updateEducation=(newData,previous)=>{
+  currentInfo={
+    ...previous,
+    // ...newData,
+  }
+  return currentInfo;
+}
+//console.log(updateEducation(newData,previous))
+
+let student=[["Luke May", 43, "male", "married"],
+["Sarah Saw", 54, "female", "single"],
+["Magac gose", 51, "male", "single"]
+]
+var keys = ["name", "age", "gender", "status"];
+let objArr=[]
+student.forEach(r=>{
+  let obj={};
+
+  r.forEach((r,i)=>{
+     obj[keys[i]]=r
+  })
+  //console.log(obj)
+  objArr.push(obj)
+
+})
+console.log(objArr)  //two object into one array
