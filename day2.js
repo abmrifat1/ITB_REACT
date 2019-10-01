@@ -15,7 +15,7 @@ function ourTrueOrFalse(isItTrue) {
   var testObj = {
     "an entree": "hamburger",
     "my side": "veggies",
-    "the drink": "water"
+    "the": "water"
   };
  
   var entreeValue = testObj;   

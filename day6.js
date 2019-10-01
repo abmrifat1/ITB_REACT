@@ -20,12 +20,12 @@
         i++
     }while(i<=groceries.length-1)
 
-    console.log("today shopping :"+ string)
+    // console.log("today shopping :"+ string)
 
 
     var string="3646352565"
     var number=parseInt(string, 10) 
-    console.log(number)
+    // console.log(number)
 
     var string="";
  
@@ -36,7 +36,7 @@
         var string= string+( groceries[i].item +":"+ groceries[i].price)+", ";
     }
 
-    console.log("today shopping :"+ string)
+    // console.log("today shopping :"+ string)
     
 
     //////////////////////////////////////////////
@@ -60,7 +60,7 @@
             var string= string+( list[i].item +":"+ list[i].price)+", ";
         }
     
-        console.log("today shopping :"+ string)
+        // console.log("today shopping :"+ string)
         
     
     }
@@ -80,28 +80,28 @@
     // var number=string.split('') 
     // console.log(number)
 
-//     const str="hello samim";
+    const str1="hello samim";
 
-//     stringChange=(sentence,position,newValue)=>{
-//         sen=sentence.split("");
-//         sen[position]=newValue;
-//         sentence=sen.join("")
-//         return sentence;
-//     }
-//     stringReplace=(sentence,oldValue,newValue)=>{
-//         sen=sentence.split("");
-//         for(var i=0;i<=sen.length-1;i++){
-//             if(sen[i]==oldValue){
-//                 sen[i]=newValue;
-//                 break;
-//             }
-//         }
-//         sentence=sen.join("");
-//         return sentence;
-//     }
+    stringChange=(sentence,position,newValue)=>{
+        sen=sentence.split("");
+        sen[position]=newValue;
+        sentence=sen.join("")
+        return sentence;
+    }
+    stringReplace=(sentence,oldValue,newValue)=>{
+        sen=sentence.split("");
+        for(var i=0;i<=sen.length-1;i++){
+            if(sen[i]==oldValue){
+                sen[i]=newValue;
+                break;
+            }
+        }
+        sentence=sen.join("");
+        return sentence;
+    }
 
-//    console.log(stringChange(str,10,"r"))
-//    console.log(stringReplace(str,"m","H"))
+   console.log(stringChange(str1,10,"r"))
+   console.log(stringReplace(str1,"m","H"))
 
     
     const str="fahello rifat";
@@ -127,20 +127,13 @@
                             sentence[blankIndex]="";
                             count--;
                         }
-
-                    }
-                   
+                    }                  
+            }   
             }
-            
-            }
-            
-
-        }
+  }
         sentence[blankIndex]=newValue;
         newSentence=sentence.join('')
-    
-        console.log(newSentence)
-        
+        console.log(newSentence)  
     } 
 
-  stringReplace(str,"fat","*");
+  stringReplace(str,"fa","*");

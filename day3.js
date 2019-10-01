@@ -20,8 +20,8 @@ function login(name,password){
     }
    
 }
-login("rifat","123");
-login("","");
+// login("rifat","123");
+// login("","");
 
 
 function getResult(mark){
@@ -47,7 +47,7 @@ function getResult(mark){
     return "Fail"
 }
 
-console.log(getResult(40));
+//console.log(getResult(40));
 
 function getMonth(month){
     
@@ -66,7 +66,7 @@ function getMonth(month){
    
     return "not match"
 }
-console.log(getMonth(3))
+// console.log(getMonth(3))
 
 function getMonth(month){
     switch(month){
@@ -84,7 +84,7 @@ function getMonth(month){
     }
 
 }
-console.log(getMonth(5));
+//console.log(getMonth(5));
 
 function getTeam(name){
     switch (name){
@@ -101,7 +101,7 @@ function getTeam(name){
     }
 }
 
-console.log(getTeam('abm'))
+// console.log(getTeam('abm'))
 
 function findMan(prop){
     var man={
@@ -111,7 +111,7 @@ function findMan(prop){
     }
     return man[prop];
 }
-console.log(findMan("name"))
+// console.log(findMan("name"))
 
 
 function login(name,password,type){
@@ -126,7 +126,7 @@ function login(name,password,type){
 
    return credential;
 }
-console.log(login("abm","123","basic"))
+//  console.log(login("abm","123","basic"))
 
 var profile={
     name:"Khorshed Alam",

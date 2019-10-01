@@ -115,11 +115,12 @@ const ename={
     id:'5998',
     todo:function(work){
       this.id=work;
-      
+      return this.id;
     }
   };
   ename.todo("abm");
-  console.log(ename.id)
+//   console.log(ename.todo("ffffff"))
+  //console.log(ename.id)
 /////////////////////
 
 var SpaceShuttle = function(targetPlanet){
