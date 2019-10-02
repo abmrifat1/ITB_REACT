@@ -52,7 +52,7 @@ var book = [
      
   }
  
-  checkReadindStatus(book,'The Road Ahead')
+  // checkReadindStatus(book,'The Road Ahead')
 
 
 //assignment

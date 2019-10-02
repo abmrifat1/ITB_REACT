@@ -15,7 +15,7 @@ const newInfo={
 }
 
 const updateEducationInfo=(currentInfo,newInfo)=>{
-     currentInfo.ssc.gpa=5.00;
+     currentInfo["ssc"]["gpa"]=5.00;
      return newInfo={...currentInfo,...newInfo}
 }
 
