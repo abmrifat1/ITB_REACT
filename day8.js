@@ -9,7 +9,7 @@ var library =
 getProperties=(obj)=>{
     return Object.keys(obj);
 }
-//console.log(getProperties(library))
+// console.log(getProperties(library))
 
 removeProperties=(obj,key)=>{
   console.log(obj);
@@ -17,7 +17,7 @@ removeProperties=(obj,key)=>{
   console.log(obj);
   
 }
-removeProperties(library,"readingStatus")
+// removeProperties(library,"readingStatus")
 
 var book = [ 
   {
@@ -62,13 +62,14 @@ var book = [
       setTimeout(() => {
         console.log(this.id);
       }, 1000);
-    }
+    },
+    address:"DOSH"
   };
 
-  console.log(obj.counter())
+  // console.log(obj.counter())
 
 
-//console.log (obj.address);
+// console.log (obj.address);
 
 
 
@@ -86,7 +87,7 @@ function findLargestLength(str){
   return maxlenght;
 }
 
-console.log(findLargestLength(sentence))
+// console.log(findLargestLength(sentence))
 
 //filter a array using filter() methood
  
@@ -113,7 +114,7 @@ console.log(powerFullArray)
 const mark=[1,2,3,4,5]
 const mechanism=(a,b)=>a+b;
 
-console.log(mark.reduce(mechanism,20))
+// console.log(mark.reduce(mechanism,20))
 
 
 
@@ -135,4 +136,4 @@ function findLargestNumber(number){
 return largestNumberArray;
 }
 
-console.log(findLargestNumber(number))
+// console.log(findLargestNumber(number))
