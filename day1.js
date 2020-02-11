@@ -25,7 +25,7 @@ function login(){
 
 login();
 
-//////////////
+
 
 function joinString(a,b,c){
     console.log(a+' '+b+' '+c);
